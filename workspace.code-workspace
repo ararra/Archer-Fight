@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"cute_tiled.h": "c",
+			"tmx.h": "c",
+			"cute_png.h": "c",
+			"sdl_image.h": "c",
+			"main.h": "c",
+			"stdlib.h": "c",
+			"tileimport.h": "c",
+			"sdl.h": "c"
+		}
+	}
+}
