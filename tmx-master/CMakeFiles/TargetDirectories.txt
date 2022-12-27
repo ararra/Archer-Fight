@@ -1,0 +1,13 @@
+/home/dude/Github Projects/Archer-Fight/tmx-master/CMakeFiles/tmx.dir
+/home/dude/Github Projects/Archer-Fight/tmx-master/CMakeFiles/edit_cache.dir
+/home/dude/Github Projects/Archer-Fight/tmx-master/CMakeFiles/rebuild_cache.dir
+/home/dude/Github Projects/Archer-Fight/tmx-master/CMakeFiles/list_install_components.dir
+/home/dude/Github Projects/Archer-Fight/tmx-master/CMakeFiles/install.dir
+/home/dude/Github Projects/Archer-Fight/tmx-master/CMakeFiles/install/local.dir
+/home/dude/Github Projects/Archer-Fight/tmx-master/CMakeFiles/install/strip.dir
+/home/dude/Github Projects/Archer-Fight/tmx-master/doc/CMakeFiles/edit_cache.dir
+/home/dude/Github Projects/Archer-Fight/tmx-master/doc/CMakeFiles/rebuild_cache.dir
+/home/dude/Github Projects/Archer-Fight/tmx-master/doc/CMakeFiles/list_install_components.dir
+/home/dude/Github Projects/Archer-Fight/tmx-master/doc/CMakeFiles/install.dir
+/home/dude/Github Projects/Archer-Fight/tmx-master/doc/CMakeFiles/install/local.dir
+/home/dude/Github Projects/Archer-Fight/tmx-master/doc/CMakeFiles/install/strip.dir
