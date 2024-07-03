@@ -1,4 +1,4 @@
-# Install script for directory: /home/dude/Github Projects/Archer-Fight/tmx-master
+# Install script for directory: /home/dude/Dokument/Code Workspaces/Archer-Fight/tmx-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -42,43 +42,47 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/dude/Github Projects/Archer-Fight/tmx-master/libtmx.a")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE STATIC_LIBRARY FILES "/home/dude/Dokument/Code Workspaces/Archer-Fight/tmx-master/libtmx.a")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/dude/Github Projects/Archer-Fight/tmx-master/src/tmx.h")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/dude/Dokument/Code Workspaces/Archer-Fight/tmx-master/src/tmx.h")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/tmx/tmxExports.cmake")
-    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+    file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/tmx/tmxExports.cmake"
-         "/home/dude/Github Projects/Archer-Fight/tmx-master/CMakeFiles/Export/lib/cmake/tmx/tmxExports.cmake")
-    if(EXPORT_FILE_CHANGED)
-      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/tmx/tmxExports-*.cmake")
-      if(OLD_CONFIG_FILES)
-        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/tmx/tmxExports.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
-        file(REMOVE ${OLD_CONFIG_FILES})
+         "/home/dude/Dokument/Code Workspaces/Archer-Fight/tmx-master/CMakeFiles/Export/3a27d78082cf4afde741cdf271c370d1/tmxExports.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/tmx/tmxExports-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/tmx/tmxExports.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
       endif()
+      unset(_cmake_old_config_files)
     endif()
+    unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tmx" TYPE FILE FILES "/home/dude/Github Projects/Archer-Fight/tmx-master/CMakeFiles/Export/lib/cmake/tmx/tmxExports.cmake")
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tmx" TYPE FILE FILES "/home/dude/Github Projects/Archer-Fight/tmx-master/CMakeFiles/Export/lib/cmake/tmx/tmxExports-noconfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tmx" TYPE FILE FILES "/home/dude/Dokument/Code Workspaces/Archer-Fight/tmx-master/CMakeFiles/Export/3a27d78082cf4afde741cdf271c370d1/tmxExports.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tmx" TYPE FILE FILES "/home/dude/Dokument/Code Workspaces/Archer-Fight/tmx-master/CMakeFiles/Export/3a27d78082cf4afde741cdf271c370d1/tmxExports-noconfig.cmake")
   endif()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tmx" TYPE FILE FILES
-    "/home/dude/Github Projects/Archer-Fight/tmx-master/tmxConfig.cmake"
-    "/home/dude/Github Projects/Archer-Fight/tmx-master/tmxConfigVersion.cmake"
+    "/home/dude/Dokument/Code Workspaces/Archer-Fight/tmx-master/tmxConfig.cmake"
+    "/home/dude/Dokument/Code Workspaces/Archer-Fight/tmx-master/tmxConfigVersion.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dude/Github Projects/Archer-Fight/tmx-master/doc/cmake_install.cmake")
+  include("/home/dude/Dokument/Code Workspaces/Archer-Fight/tmx-master/doc/cmake_install.cmake")
 
 endif()
 
@@ -90,5 +94,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dude/Github Projects/Archer-Fight/tmx-master/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dude/Dokument/Code Workspaces/Archer-Fight/tmx-master/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

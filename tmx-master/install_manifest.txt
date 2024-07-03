@@ -1,4 +1,4 @@
-/usr/local/lib/libtmx.a
+/usr/local/lib64/libtmx.a
 /usr/local/include/tmx.h
 /usr/local/lib/cmake/tmx/tmxExports.cmake
 /usr/local/lib/cmake/tmx/tmxExports-noconfig.cmake

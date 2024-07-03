@@ -1,13 +1,13 @@
 CFLAGS = -std=c2x -Wall -Wextra
 LDFLAGS =  `pkg-config --cflags --libs sdl2 ` -lSDL2_image -ltmx -lz -lxml2
-
+ 
 
 GameTest: main.c
-	gcc $(CFLAGS) -o GameTest main.c  $(LDFLAGS) 
+	gcc $(CFLAGS) -o GameTest main.c init.c render.c update.c $(LDFLAGS) 
 
 
 GameBug:
-	gcc $(CFLAGS) -g -DDEBUG -o GameBug main.c $(LDFLAGS) 
+	gcc $(CFLAGS) -g -DDEBUG -o GameBug main.c init.c render.c update.c $(LDFLAGS) 
  
 
 .PHONY: test bug clean
@@ -17,6 +17,8 @@ test: GameTest
 
 bug: GameBug
 	./GameBug
+
+
 
 
 clean:
